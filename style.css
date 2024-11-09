@@ -1,0 +1,434 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: "Barlow", serif;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     color: black;
+     padding: 20px;
+}
+
+header h2 {
+     color: white;
+     font-size: 30px;
+}
+
+nav ul {
+     display: flex;
+     align-items: center;
+     list-style: none;
+}
+
+nav > svg {
+     display: none;
+}
+
+ul a {
+     font-weight: 400;
+     color: white;
+     margin-right: 20px;
+     cursor: pointer;
+     text-decoration: none;
+}
+
+ul > .button {
+     font-size: 15px;
+     background-color: white;
+     border-radius: 15px;
+     padding: 10px 20px;
+     border: none;
+     font-weight: 600;
+     font-family: "Fraunces", serif;
+     cursor: pointer;
+     color: black;
+     text-decoration: none;
+}
+
+ul > .button:hover {
+     background-color: black;
+     animation-duration: 3s;
+     color: white;
+}
+
+.home .desktop-image-header {
+     width: 100%;
+     object-fit: cover;
+     z-index: -1;
+     position: absolute;
+     top: 0;
+     height: 930px;
+}
+
+.home .mobile-image-header {
+     display: none;
+}
+
+.home h1 {
+     color: white;
+     font-weight: 600;
+     letter-spacing: 12px;
+     font-size: 70px;
+     margin-top: 140px;
+     font-family: "Fraunces", serif;
+}
+
+.home-title {
+     display: grid;
+     align-items: center;
+     justify-content: center;
+}
+
+.home-title > svg {
+     margin: 0 auto;
+     margin-top: 130px;
+}
+
+.container {
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     z-index: -1;
+     top: 380px;
+}
+
+.transform {
+     display: flex;
+     align-items: center;
+     background-color: white;
+     width: fit-content;
+}
+
+.transform > img {
+     width: 800px;
+}
+
+.transform-text {
+     display: grid;
+     align-items: center;
+     padding: 70px 110px;
+}
+
+.transform-text > h3 {
+     font-family: "Fraunces", serif;
+     font-size: 70px;
+     padding-bottom: 30px;
+     width: 580px;
+}
+.transform-text > p {
+     width: 500px;
+     color: gray;
+     line-height: 1.5;
+     padding-bottom: 30px;
+     font-size: 20px;
+}
+
+.transform-text > button {
+     width: fit-content;
+     border: none;
+     background-color: transparent;
+     border-bottom: 2px solid yellow;
+     font-weight: 700;
+     font-family: "Fraunces", serif;
+}
+
+.standout {
+     display: flex;
+     align-items: center;
+     background-color: white;
+     width: fit-content;
+}
+
+.standout > img {
+     width: 800px;
+}
+
+.standout-text {
+     display: grid;
+     align-items: center;
+     padding: 70px 40px;
+}
+
+.standout-text > h3 {
+     font-family: "Fraunces", serif;
+     font-size: 70px;
+     padding-bottom: 30px;
+     width: 720px;
+}
+
+.standout-text > p {
+     width: 500px;
+     color: gray;
+     line-height: 1.5;
+     font-size: 20px;
+     padding-bottom: 30px;
+}
+
+.standout-text > button {
+     width: fit-content;
+     border: none;
+     background-color: transparent;
+     border-bottom: 2px solid yellow;
+     font-weight: 700;
+     font-family: "Fraunces", serif;
+}
+
+.photos {
+     display: flex;
+     align-items: center;
+}
+
+.graphic-design {
+     position: relative;
+}
+
+.graphic-design > img {
+     width: 800px;
+}
+
+.graphic-design-text {
+     position: absolute;
+     top: 400px;
+     left: 280px;
+}
+
+.graphic-design-text > h3 {
+     font-family: "Fraunces", serif;
+     color: hsl(212, 27%, 19%);
+     font-size: 30px;
+     margin-bottom: 10px;
+}
+
+.graphic-design-text > p {
+     color: hsl(212, 27%, 19%);
+     line-height: 1.5;
+     position: relative;
+     left: -90px;
+}
+
+.photography {
+     position: relative;
+}
+
+.photography-text {
+     position: absolute;
+     top: 400px;
+     left: 305px;
+}
+
+.photography > img {
+     width: 800px;
+}
+
+.photography-text > h3 {
+     font-family: "Fraunces", serif;
+     color: hsl(212, 27%, 19%);
+     font-size: 30px;
+     margin-bottom: 10px;
+}
+
+.photography-text > p {
+     color: hsl(212, 27%, 19%);
+     line-height: 1.5;
+     position: relative;
+     left: -85px;
+}
+
+.container-testimonials {
+     display: grid;
+     align-items: center;
+     position: relative;
+     top: 510px;
+}
+
+.container-testimonials > h3 {
+     text-align: center;
+     text-transform: uppercase;
+     color: hsl(210, 4%, 67%);
+     font-family: "Fraunces", serif;
+     letter-spacing: 4px;
+     margin-bottom: 80px;
+}
+
+.people {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.people .person {
+     display: grid;
+     align-items: center;
+     margin: 0 30px;
+}
+
+.person img {
+     border-radius: 80px;
+     margin: 0 auto;
+     margin-bottom: 30px;
+     width: 100px;
+}
+
+.person p {
+     width: 300px;
+     text-align: center;
+     line-height: 1.5;
+     color: gray;
+}
+
+.person h4 {
+     text-align: center;
+     font-family: "Fraunces", serif;
+     font-weight: 900;
+     margin-top: 30px;
+}
+.person h5 {
+     text-align: center;
+     margin-top: 10px;
+     color: gray;
+}
+
+.images {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     top: 700px;
+}
+
+.images img {
+     width: 400px;
+}
+
+.footer-container {
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     background-color: hsl(210, 4%, 67%);
+     position: relative;
+     top: 700px;
+     padding: 40px 0;
+}
+
+.footer-container > h1 {
+     text-align: center;
+     margin-bottom: 30px;
+     color: hsl(212, 27%, 19%);
+}
+
+.navigation {
+     display: flex;
+     align-items: center;
+     margin-bottom: 60px;
+}
+
+.navigation h4 {
+     margin-right: 30px;
+     color: hsl(213, 9%, 39%);
+     cursor: pointer;
+}
+
+.social-media {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.social-media svg {
+     margin-right: 20px;
+     cursor: pointer;
+}
+
+.attribution {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+     nav > svg {
+          display: block;
+     }
+
+     nav ul {
+          display: none;
+     }
+
+     .home h1 {
+          font-size: 40px;
+          text-align: center;
+     }
+
+     .home .mobile-image-header {
+          display: block;
+          width: 100%;
+          z-index: -1;
+          position: absolute;
+          top: 0;
+          height: 930px;
+     }
+
+     .transform {
+          display: grid;
+          align-items: center;
+     }
+
+     .transform-text > h3 {
+          font-size: 30px;
+          text-align: center;
+     }
+
+     .transform-text > p {
+          font-size: 15px;
+          width: 400px;
+          margin: 0 auto;
+     }
+
+     .transform-text > button {
+          margin: 0 auto;
+     }
+
+     .transform > img {
+          width: 400px;
+          margin: 0 auto;
+     }
+
+     .standout {
+          display: grid;
+          align-items: center;
+     }
+
+     .standout-text > h3 {
+          font-size: 25px;
+          text-align: center;
+     }
+
+     .standout-text > p {
+          font-size: 15px;
+          width: 400px;
+          margin: 0 auto;
+     }
+
+     .standout-text > button {
+          margin: 0 auto;
+     }
+
+     .standout > img {
+          width: 400px;
+          margin: 0 auto;
+     }
+
+     .photos {
+          display: grid;
+          align-items: center;
+     }
+}

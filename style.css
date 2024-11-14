@@ -71,7 +71,7 @@ ul > .button:hover {
      display: none;
 }
 
-.home h1 {
+.home-title > h1 {
      color: white;
      font-weight: 600;
      letter-spacing: 12px;
@@ -354,7 +354,11 @@ ul > .button:hover {
      margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
+     header > h2 {
+          font-size: 20px;
+     }
+
      nav > svg {
           display: block;
      }
@@ -363,9 +367,18 @@ ul > .button:hover {
           display: none;
      }
 
-     .home h1 {
-          font-size: 40px;
+     .home-title h1 {
+          font-size: 30px;
           text-align: center;
+          margin-top: 44px;
+     }
+
+     .home-title > svg {
+          margin-top: 60px;
+     }
+
+     .home .desktop-image-header {
+          display: none;
      }
 
      .home .mobile-image-header {
@@ -374,7 +387,12 @@ ul > .button:hover {
           z-index: -1;
           position: absolute;
           top: 0;
-          height: 930px;
+          /* height: 930px; */
+     }
+
+     .container {
+          position: relative;
+          top: 104px;
      }
 
      .transform {
@@ -382,23 +400,23 @@ ul > .button:hover {
           align-items: center;
      }
 
+     .transform > img {
+          width: 300px;
+          margin: 0 auto;
+     }
+
      .transform-text > h3 {
-          font-size: 30px;
+          font-size: 25px;
           text-align: center;
      }
 
      .transform-text > p {
           font-size: 15px;
-          width: 400px;
+          width: 275px;
           margin: 0 auto;
      }
 
      .transform-text > button {
-          margin: 0 auto;
-     }
-
-     .transform > img {
-          width: 400px;
           margin: 0 auto;
      }
 
@@ -408,13 +426,212 @@ ul > .button:hover {
      }
 
      .standout-text > h3 {
-          font-size: 25px;
+          font-size: 20px;
           text-align: center;
      }
 
      .standout-text > p {
           font-size: 15px;
+          width: 300px;
+          margin: 0 auto;
+     }
+
+     .standout-text > button {
+          margin: 0 auto;
+     }
+
+     .standout > img {
+          width: 300px;
+          margin: 0 auto;
+     }
+
+     .photos {
+          display: grid;
+          align-items: center;
+     }
+
+     .graphic-design {
+          margin: 0 auto;
+          position: relative;
+     }
+
+     .graphic-design > img {
+          width: 300px;
+     }
+
+     .graphic-design-text {
+          position: absolute;
+          left: 64px;
+          top: 143px;
+     }
+     .graphic-design-text > h3 {
+          font-size: 20px;
+     }
+
+     .graphic-design-text > p {
+          width: 250px;
+          font-size: 12px;
+          position: relative;
+          left: -36px;
+     }
+
+     .photography {
+          margin: 0 auto;
+          position: relative;
+     }
+
+     .photography > img {
+          width: 300px;
+     }
+
+     .photography-text {
+          position: absolute;
+          left: 80px;
+          top: 143px;
+     }
+     .photography-text > h3 {
+          font-size: 20px;
+     }
+
+     .photography-text > p {
+          width: 250px;
+          font-size: 12px;
+          position: relative;
+          left: -36px;
+     }
+
+     .container-testimonials {
+          position: relative;
+          top: 150px;
+          left: -17px;
+     }
+
+     .people {
+          display: grid;
+          align-items: center;
+     }
+
+     .person h5 {
+          margin-top: 5px;
+          margin-bottom: 15px;
+     }
+
+     .images {
+          display: grid;
+          align-items: center;
+          position: relative;
+          top: 200px;
+     }
+
+     .images img {
+          width: 300px;
+     }
+
+     .footer-container {
+          position: relative;
+          top: 300px;
+     }
+
+     .footer-container h1 {
+          margin-bottom: 20px;
+     }
+
+     .navigation {
+          display: grid;
+          align-items: center;
+          position: relative;
+          left: 55px;
+     }
+
+     .navigation h4 {
+          margin-top: 20px;
+     }
+
+     .attribution {
+          display: grid;
+          align-items: center;
+     }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+     header > h2 {
+          font-size: 20px;
+     }
+
+     nav > svg {
+          display: block;
+     }
+
+     nav ul {
+          display: none;
+     }
+
+     .home-title h1 {
+          font-size: 30px;
+          text-align: center;
+          margin-top: 44px;
+     }
+
+     .home-title > svg {
+          margin-top: 60px;
+     }
+
+     .home .desktop-image-header {
+          display: none;
+     }
+
+     .home .mobile-image-header {
+          display: block;
+          width: 100%;
+          z-index: -1;
+          position: absolute;
+          top: 0;
+          /* height: 930px; */
+     }
+
+     .container {
+          position: relative;
+          top: 104px;
+     }
+
+     .transform {
+          display: grid;
+          align-items: center;
+     }
+
+     .transform > img {
           width: 400px;
+          margin: 0 auto;
+     }
+
+     .transform-text > h3 {
+          font-size: 25px;
+          text-align: center;
+     }
+
+     .transform-text > p {
+          font-size: 15px;
+          width: 275px;
+          margin: 0 auto;
+     }
+
+     .transform-text > button {
+          margin: 0 auto;
+     }
+
+     .standout {
+          display: grid;
+          align-items: center;
+     }
+
+     .standout-text > h3 {
+          font-size: 20px;
+          text-align: center;
+     }
+
+     .standout-text > p {
+          font-size: 15px;
+          width: 300px;
           margin: 0 auto;
      }
 
@@ -428,6 +645,307 @@ ul > .button:hover {
      }
 
      .photos {
+          display: grid;
+          align-items: center;
+     }
+
+     .graphic-design {
+          margin: 0 auto;
+          position: relative;
+     }
+
+     .graphic-design > img {
+          width: 300px;
+     }
+
+     .graphic-design-text {
+          position: absolute;
+          left: 64px;
+          top: 143px;
+     }
+     .graphic-design-text > h3 {
+          font-size: 20px;
+     }
+
+     .graphic-design-text > p {
+          width: 250px;
+          font-size: 12px;
+          position: relative;
+          left: -36px;
+     }
+
+     .photography {
+          margin: 0 auto;
+          position: relative;
+     }
+
+     .photography > img {
+          width: 300px;
+     }
+
+     .photography-text {
+          position: absolute;
+          left: 80px;
+          top: 143px;
+     }
+     .photography-text > h3 {
+          font-size: 20px;
+     }
+
+     .photography-text > p {
+          width: 250px;
+          font-size: 12px;
+          position: relative;
+          left: -36px;
+     }
+
+     .container-testimonials {
+          position: relative;
+          top: 150px;
+          left: -17px;
+     }
+
+     .people {
+          display: grid;
+          align-items: center;
+     }
+
+     .person h5 {
+          margin-top: 5px;
+          margin-bottom: 15px;
+     }
+
+     .images {
+          display: grid;
+          align-items: center;
+          position: relative;
+          top: 200px;
+     }
+
+     .images img {
+          width: 300px;
+     }
+
+     .footer-container {
+          position: relative;
+          top: 300px;
+     }
+
+     .footer-container h1 {
+          margin-bottom: 20px;
+     }
+
+     .navigation {
+          display: grid;
+          align-items: center;
+          position: relative;
+          left: 55px;
+     }
+
+     .navigation h4 {
+          margin-top: 20px;
+     }
+
+     .attribution {
+          display: grid;
+          align-items: center;
+     }
+}
+
+@media (min-width: 490px) and (max-width: 780px) {
+     header > h2 {
+          font-size: 20px;
+     }
+
+     nav > svg {
+          display: block;
+     }
+
+     nav ul {
+          display: none;
+     }
+
+     .home-title h1 {
+          font-size: 30px;
+          text-align: center;
+          margin-top: 44px;
+     }
+
+     .home-title > svg {
+          margin-top: 60px;
+     }
+
+     .home .desktop-image-header {
+          display: none;
+     }
+
+     .home .mobile-image-header {
+          display: block;
+          width: 100%;
+          z-index: -1;
+          position: absolute;
+          top: 0;
+          /* height: 930px; */
+     }
+
+     .container {
+          position: relative;
+          top: 104px;
+     }
+
+     .transform {
+          display: grid;
+          align-items: center;
+     }
+
+     .transform > img {
+          width: 400px;
+          margin: 0 auto;
+     }
+
+     .transform-text > h3 {
+          font-size: 25px;
+          text-align: center;
+     }
+
+     .transform-text > p {
+          font-size: 15px;
+          width: 275px;
+          margin: 0 auto;
+     }
+
+     .transform-text > button {
+          margin: 0 auto;
+     }
+
+     .standout {
+          display: grid;
+          align-items: center;
+     }
+
+     .standout-text > h3 {
+          font-size: 20px;
+          text-align: center;
+     }
+
+     .standout-text > p {
+          font-size: 15px;
+          width: 300px;
+          margin: 0 auto;
+     }
+
+     .standout-text > button {
+          margin: 0 auto;
+     }
+
+     .standout > img {
+          width: 400px;
+          margin: 0 auto;
+     }
+
+     .photos {
+          display: grid;
+          align-items: center;
+     }
+
+     .graphic-design {
+          margin: 0 auto;
+          position: relative;
+     }
+
+     .graphic-design > img {
+          width: 300px;
+     }
+
+     .graphic-design-text {
+          position: absolute;
+          left: 64px;
+          top: 143px;
+     }
+     .graphic-design-text > h3 {
+          font-size: 20px;
+     }
+
+     .graphic-design-text > p {
+          width: 250px;
+          font-size: 12px;
+          position: relative;
+          left: -36px;
+     }
+
+     .photography {
+          margin: 0 auto;
+          position: relative;
+     }
+
+     .photography > img {
+          width: 300px;
+     }
+
+     .photography-text {
+          position: absolute;
+          left: 80px;
+          top: 143px;
+     }
+     .photography-text > h3 {
+          font-size: 20px;
+     }
+
+     .photography-text > p {
+          width: 250px;
+          font-size: 12px;
+          position: relative;
+          left: -36px;
+     }
+
+     .container-testimonials {
+          position: relative;
+          top: 150px;
+          left: -17px;
+     }
+
+     .people {
+          display: grid;
+          align-items: center;
+     }
+
+     .person h5 {
+          margin-top: 5px;
+          margin-bottom: 15px;
+     }
+
+     .images {
+          display: grid;
+          align-items: center;
+          position: relative;
+          top: 200px;
+     }
+
+     .images img {
+          width: 300px;
+     }
+
+     .footer-container {
+          position: relative;
+          top: 300px;
+     }
+
+     .footer-container h1 {
+          margin-bottom: 20px;
+     }
+
+     .navigation {
+          display: grid;
+          align-items: center;
+          position: relative;
+          left: 55px;
+     }
+
+     .navigation h4 {
+          margin-top: 20px;
+     }
+
+     .attribution {
           display: grid;
           align-items: center;
      }

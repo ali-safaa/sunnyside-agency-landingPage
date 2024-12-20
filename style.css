@@ -12,8 +12,10 @@ header {
      display: flex;
      align-items: center;
      justify-content: space-between;
-     color: black;
      padding: 20px;
+     position: fixed;
+     top: 0;
+     width: 100%;
 }
 
 header h2 {
@@ -21,7 +23,11 @@ header h2 {
      font-size: 30px;
 }
 
-nav ul {
+nav {
+     margin-right: 20px;
+}
+
+nav > ul {
      display: flex;
      align-items: center;
      list-style: none;
@@ -58,17 +64,12 @@ ul > .button:hover {
      color: white;
 }
 
-.home .desktop-image-header {
-     width: 100%;
-     object-fit: cover;
-     z-index: -1;
-     position: absolute;
-     top: 0;
-     height: 930px;
-}
-
-.home .mobile-image-header {
-     display: none;
+.hero-img {
+     background-image: url("/images/desktop/image-header.jpg");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 900px;
 }
 
 .home-title > h1 {
@@ -96,8 +97,6 @@ ul > .button:hover {
      align-items: center;
      justify-content: center;
      position: relative;
-     z-index: -1;
-     top: 380px;
 }
 
 .transform {
@@ -245,8 +244,7 @@ ul > .button:hover {
 .container-testimonials {
      display: grid;
      align-items: center;
-     position: relative;
-     top: 510px;
+     margin: 200px 0;
 }
 
 .container-testimonials > h3 {
@@ -300,8 +298,6 @@ ul > .button:hover {
      display: flex;
      align-items: center;
      justify-content: center;
-     position: relative;
-     top: 700px;
 }
 
 .images img {
@@ -313,8 +309,6 @@ ul > .button:hover {
      align-items: center;
      justify-content: center;
      background-color: hsl(210, 4%, 67%);
-     position: relative;
-     top: 700px;
      padding: 40px 0;
 }
 
@@ -354,7 +348,7 @@ ul > .button:hover {
      margin-top: 20px;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 839px) {
      header > h2 {
           font-size: 20px;
      }

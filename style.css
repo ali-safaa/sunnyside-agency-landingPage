@@ -20,26 +20,26 @@ header {
 
 header h2 {
      color: white;
-     font-size: 30px;
+     font-size: clamp(20px, 5vw, 30px);
 }
 
-nav {
+.nav-desktop {
      margin-right: 20px;
 }
 
-nav > ul {
+.nav-desktop > ul {
      display: flex;
      align-items: center;
      list-style: none;
 }
 
-nav > svg {
+.hamburger-icon {
      display: none;
 }
 
 ul a {
      font-weight: 400;
-     color: white;
+     color: black;
      margin-right: 20px;
      cursor: pointer;
      text-decoration: none;
@@ -62,6 +62,10 @@ ul > .button:hover {
      background-color: black;
      animation-duration: 3s;
      color: white;
+}
+
+.nav-mobile {
+     display: none;
 }
 
 .hero-img {
@@ -194,10 +198,11 @@ ul > .button:hover {
 
 .graphic-design {
      position: relative;
+     width: 100%;
+     max-width: 800px;
 }
 
 .graphic-design > img {
-     max-width: 800px;
      width: 100%;
      height: auto;
 }
@@ -224,6 +229,8 @@ ul > .button:hover {
 
 .photography {
      position: relative;
+     width: 100%;
+     max-width: 800px;
 }
 
 .photography-text {
@@ -233,7 +240,6 @@ ul > .button:hover {
 }
 
 .photography > img {
-     max-width: 800px;
      width: 100%;
      height: auto;
 }
@@ -271,6 +277,7 @@ ul > .button:hover {
      display: flex;
      align-items: center;
      justify-content: center;
+     flex-wrap: wrap;
 }
 
 .people .person {
@@ -309,6 +316,7 @@ ul > .button:hover {
      display: flex;
      align-items: center;
      justify-content: center;
+     flex-wrap: wrap;
 }
 
 .images img {
@@ -383,429 +391,59 @@ ul > .button:hover {
           width: 100%;
           height: auto;
      }
+
+     .photos {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+     }
 }
 
 @media (min-width: 320px) and (max-width: 839px) {
-     header > h2 {
-          font-size: 20px;
-     }
-
-     nav > svg {
-          display: block;
-     }
-
-     nav ul {
+     .nav-desktop {
           display: none;
      }
 
-     .home-title h1 {
-          font-size: 30px;
-          text-align: center;
-          margin-top: 44px;
+     .hamburger-icon {
+          display: none;
+          margin-right: 40px;
      }
-
-     .home-title > svg {
-          margin-top: 60px;
+     .close-icon {
+          width: 30px;
+          margin-right: 40px;
      }
-
-     .container {
-          position: relative;
-          top: 104px;
-     }
-
-     .transform {
-          display: grid;
-          align-items: center;
-     }
-
-     .transform > img {
-          width: 300px;
-          margin: 0 auto;
-     }
-
-     .transform-text > h3 {
-          font-size: 25px;
-          text-align: center;
-     }
-
-     .transform-text > p {
-          font-size: 15px;
-          width: 275px;
-          margin: 0 auto;
-     }
-
-     .transform-text > button {
-          margin: 0 auto;
-     }
-
-     .standout {
-          display: grid;
-          align-items: center;
-     }
-
-     .standout-text > h3 {
-          font-size: 20px;
-          text-align: center;
-     }
-
-     .standout-text > p {
-          font-size: 15px;
-          width: 300px;
-          margin: 0 auto;
-     }
-
-     .standout-text > button {
-          margin: 0 auto;
-     }
-
-     .standout > img {
-          width: 300px;
-          margin: 0 auto;
-     }
-
-     .photos {
-          display: grid;
-          align-items: center;
-     }
-
-     .graphic-design {
-          margin: 0 auto;
-          position: relative;
-     }
-
-     .graphic-design > img {
-          width: 300px;
-     }
-
-     .graphic-design-text {
+     .nav-mobile {
+          display: block;
           position: absolute;
-          left: 64px;
-          top: 143px;
-     }
-     .graphic-design-text > h3 {
-          font-size: 20px;
-     }
-
-     .graphic-design-text > p {
-          width: 250px;
-          font-size: 12px;
-          position: relative;
-          left: -36px;
-     }
-
-     .photography {
-          margin: 0 auto;
-          position: relative;
-     }
-
-     .photography > img {
-          width: 300px;
-     }
-
-     .photography-text {
-          position: absolute;
-          left: 80px;
-          top: 143px;
-     }
-     .photography-text > h3 {
-          font-size: 20px;
-     }
-
-     .photography-text > p {
-          width: 250px;
-          font-size: 12px;
-          position: relative;
-          left: -36px;
-     }
-
-     .container-testimonials {
-          position: relative;
-          top: 150px;
-          left: -17px;
-     }
-
-     .people {
-          display: grid;
-          align-items: center;
-     }
-
-     .person h5 {
-          margin-top: 5px;
-          margin-bottom: 15px;
-     }
-
-     .images {
-          display: grid;
-          align-items: center;
-          position: relative;
-          top: 200px;
-     }
-
-     .images img {
-          width: 300px;
-     }
-
-     .footer-container {
-          position: relative;
-          top: 300px;
-     }
-
-     .footer-container h1 {
-          margin-bottom: 20px;
-     }
-
-     .navigation {
-          display: grid;
-          align-items: center;
-          position: relative;
-          left: 55px;
-     }
-
-     .navigation h4 {
-          margin-top: 20px;
-     }
-
-     .attribution {
-          display: grid;
-          align-items: center;
-     }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-     header > h2 {
-          font-size: 20px;
-     }
-
-     nav > svg {
-          display: block;
-     }
-
-     nav ul {
-          display: none;
-     }
-
-     .home-title h1 {
-          font-size: 30px;
-          text-align: center;
-          margin-top: 44px;
-     }
-
-     .home-title > svg {
-          margin-top: 60px;
-     }
-
-     .home .desktop-image-header {
-          display: none;
-     }
-
-     .home .mobile-image-header {
-          display: block;
+          top: 150%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
           width: 100%;
-          z-index: -1;
-          position: absolute;
-          top: 0;
-          /* height: 930px; */
+          max-width: 500px;
+          height: auto;
+          padding: 22px 0;
+          border-radius: 10px;
      }
 
-     .container {
-          position: relative;
-          top: 104px;
-     }
-
-     .transform {
+     .nav-mobile > ul a {
           display: grid;
           align-items: center;
-     }
-
-     .transform > img {
-          width: 400px;
-          margin: 0 auto;
-     }
-
-     .transform-text > h3 {
-          font-size: 25px;
-          text-align: center;
-     }
-
-     .transform-text > p {
-          font-size: 15px;
-          width: 275px;
-          margin: 0 auto;
-     }
-
-     .transform-text > button {
-          margin: 0 auto;
-     }
-
-     .standout {
-          display: grid;
-          align-items: center;
-     }
-
-     .standout-text > h3 {
-          font-size: 20px;
-          text-align: center;
-     }
-
-     .standout-text > p {
-          font-size: 15px;
-          width: 300px;
-          margin: 0 auto;
-     }
-
-     .standout-text > button {
-          margin: 0 auto;
-     }
-
-     .standout > img {
-          width: 400px;
-          margin: 0 auto;
-     }
-
-     .photos {
-          display: grid;
-          align-items: center;
-     }
-
-     .graphic-design {
-          margin: 0 auto;
-          position: relative;
-     }
-
-     .graphic-design > img {
-          width: 300px;
-     }
-
-     .graphic-design-text {
-          position: absolute;
-          left: 64px;
-          top: 143px;
-     }
-     .graphic-design-text > h3 {
-          font-size: 20px;
-     }
-
-     .graphic-design-text > p {
-          width: 250px;
-          font-size: 12px;
-          position: relative;
-          left: -36px;
-     }
-
-     .photography {
-          margin: 0 auto;
-          position: relative;
-     }
-
-     .photography > img {
-          width: 300px;
-     }
-
-     .photography-text {
-          position: absolute;
-          left: 80px;
-          top: 143px;
-     }
-     .photography-text > h3 {
-          font-size: 20px;
-     }
-
-     .photography-text > p {
-          width: 250px;
-          font-size: 12px;
-          position: relative;
-          left: -36px;
-     }
-
-     .container-testimonials {
-          position: relative;
-          top: 150px;
-          left: -17px;
-     }
-
-     .people {
-          display: grid;
-          align-items: center;
-     }
-
-     .person h5 {
-          margin-top: 5px;
-          margin-bottom: 15px;
-     }
-
-     .images {
-          display: grid;
-          align-items: center;
-          position: relative;
-          top: 200px;
-     }
-
-     .images img {
-          width: 300px;
-     }
-
-     .footer-container {
-          position: relative;
-          top: 300px;
-     }
-
-     .footer-container h1 {
           margin-bottom: 20px;
-     }
-
-     .navigation {
-          display: grid;
-          align-items: center;
-          position: relative;
-          left: 55px;
-     }
-
-     .navigation h4 {
-          margin-top: 20px;
-     }
-
-     .attribution {
-          display: grid;
-          align-items: center;
-     }
-}
-
-@media (min-width: 490px) and (max-width: 780px) {
-     header > h2 {
-          font-size: 20px;
-     }
-
-     nav > svg {
-          display: block;
-     }
-
-     nav ul {
-          display: none;
+          text-align: center;
+          font-weight: 500;
      }
 
      .home-title h1 {
-          font-size: 30px;
+          /* font-size: 30px; */
           text-align: center;
-          margin-top: 44px;
+          /* margin-top: 44px; */
      }
 
      .home-title > svg {
           margin-top: 60px;
      }
 
-     .home .desktop-image-header {
-          display: none;
-     }
-
-     .home .mobile-image-header {
-          display: block;
-          width: 100%;
-          z-index: -1;
-          position: absolute;
-          top: 0;
-          /* height: 930px; */
-     }
-
      .container {
           position: relative;
           top: 104px;
@@ -816,19 +454,19 @@ ul > .button:hover {
           align-items: center;
      }
 
-     .transform > img {
-          width: 400px;
+     /* .transform > img {
+          width: 300px;
           margin: 0 auto;
-     }
+     } */
 
      .transform-text > h3 {
-          font-size: 25px;
+          /* font-size: 25px; */
           text-align: center;
      }
 
      .transform-text > p {
           font-size: 15px;
-          width: 275px;
+          /* width: 275px; */
           margin: 0 auto;
      }
 
@@ -841,14 +479,14 @@ ul > .button:hover {
           align-items: center;
      }
 
-     .standout-text > h3 {
+     /* .standout-text > h3 {
           font-size: 20px;
           text-align: center;
-     }
+     } */
 
      .standout-text > p {
           font-size: 15px;
-          width: 300px;
+          /* width: 300px; */
           margin: 0 auto;
      }
 
@@ -856,24 +494,19 @@ ul > .button:hover {
           margin: 0 auto;
      }
 
-     .standout > img {
-          width: 400px;
+     /* .standout > img {
+          width: 300px;
           margin: 0 auto;
-     }
+     } */
 
      .photos {
           display: grid;
           align-items: center;
      }
 
-     .graphic-design {
-          margin: 0 auto;
-          position: relative;
-     }
-
-     .graphic-design > img {
+     /* .graphic-design > img {
           width: 300px;
-     }
+     } */
 
      .graphic-design-text {
           position: absolute;
@@ -885,20 +518,15 @@ ul > .button:hover {
      }
 
      .graphic-design-text > p {
-          width: 250px;
+          /* width: 250px; */
           font-size: 12px;
           position: relative;
           left: -36px;
      }
 
-     .photography {
-          margin: 0 auto;
-          position: relative;
-     }
-
-     .photography > img {
+     /* .photography > img {
           width: 300px;
-     }
+     } */
 
      .photography-text {
           position: absolute;
@@ -910,16 +538,10 @@ ul > .button:hover {
      }
 
      .photography-text > p {
-          width: 250px;
+          /* width: 250px; */
           font-size: 12px;
           position: relative;
           left: -36px;
-     }
-
-     .container-testimonials {
-          position: relative;
-          top: 150px;
-          left: -17px;
      }
 
      .people {
@@ -932,20 +554,8 @@ ul > .button:hover {
           margin-bottom: 15px;
      }
 
-     .images {
-          display: grid;
-          align-items: center;
-          position: relative;
-          top: 200px;
-     }
-
      .images img {
           width: 300px;
-     }
-
-     .footer-container {
-          position: relative;
-          top: 300px;
      }
 
      .footer-container h1 {

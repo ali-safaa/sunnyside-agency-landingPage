@@ -76,7 +76,7 @@ ul > .button:hover {
      color: white;
      font-weight: 600;
      letter-spacing: 12px;
-     font-size: 70px;
+     font-size: clamp(20px, 5vw, 70px);
      margin-top: 140px;
      font-family: "Fraunces", serif;
 }
@@ -93,21 +93,23 @@ ul > .button:hover {
 }
 
 .container {
-     display: grid;
+     display: flex;
      align-items: center;
-     justify-content: center;
-     position: relative;
+     flex-direction: column;
 }
 
 .transform {
      display: flex;
      align-items: center;
      background-color: white;
-     width: fit-content;
+     width: 100%;
+     justify-content: center;
 }
 
 .transform > img {
-     width: 800px;
+     max-width: 800px;
+     width: 100%;
+     height: auto;
 }
 
 .transform-text {
@@ -118,12 +120,12 @@ ul > .button:hover {
 
 .transform-text > h3 {
      font-family: "Fraunces", serif;
-     font-size: 70px;
+     font-size: clamp(20px, 5vw, 70px);
      padding-bottom: 30px;
-     width: 580px;
+     max-width: 580px;
 }
 .transform-text > p {
-     width: 500px;
+     max-width: 500px;
      color: gray;
      line-height: 1.5;
      padding-bottom: 30px;
@@ -143,11 +145,14 @@ ul > .button:hover {
      display: flex;
      align-items: center;
      background-color: white;
-     width: fit-content;
+     width: 100%;
+     justify-content: center;
 }
 
 .standout > img {
-     width: 800px;
+     max-width: 800px;
+     width: 100%;
+     height: auto;
 }
 
 .standout-text {
@@ -158,13 +163,13 @@ ul > .button:hover {
 
 .standout-text > h3 {
      font-family: "Fraunces", serif;
-     font-size: 70px;
+     font-size: clamp(20px, 5vw, 70px);
      padding-bottom: 30px;
-     width: 720px;
+     max-width: 720px;
 }
 
 .standout-text > p {
-     width: 500px;
+     max-width: 500px;
      color: gray;
      line-height: 1.5;
      font-size: 20px;
@@ -183,6 +188,8 @@ ul > .button:hover {
 .photos {
      display: flex;
      align-items: center;
+     width: 100%;
+     justify-content: center;
 }
 
 .graphic-design {
@@ -190,7 +197,9 @@ ul > .button:hover {
 }
 
 .graphic-design > img {
-     width: 800px;
+     max-width: 800px;
+     width: 100%;
+     height: auto;
 }
 
 .graphic-design-text {
@@ -224,7 +233,9 @@ ul > .button:hover {
 }
 
 .photography > img {
-     width: 800px;
+     max-width: 800px;
+     width: 100%;
+     height: auto;
 }
 
 .photography-text > h3 {
@@ -348,6 +359,32 @@ ul > .button:hover {
      margin-top: 20px;
 }
 
+@media (min-width: 840px) and (max-width: 1452px) {
+     .transform {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+     }
+
+     .transform > img {
+          max-width: 800px;
+          width: 100%;
+          height: auto;
+     }
+
+     .standout {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+     }
+
+     .standout > img {
+          max-width: 800px;
+          width: 100%;
+          height: auto;
+     }
+}
+
 @media (min-width: 320px) and (max-width: 839px) {
      header > h2 {
           font-size: 20px;
@@ -369,19 +406,6 @@ ul > .button:hover {
 
      .home-title > svg {
           margin-top: 60px;
-     }
-
-     .home .desktop-image-header {
-          display: none;
-     }
-
-     .home .mobile-image-header {
-          display: block;
-          width: 100%;
-          z-index: -1;
-          position: absolute;
-          top: 0;
-          /* height: 930px; */
      }
 
      .container {

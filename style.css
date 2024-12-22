@@ -16,6 +16,7 @@ header {
      position: fixed;
      top: 0;
      width: 100%;
+     z-index: 1;
 }
 
 header h2 {
@@ -34,6 +35,10 @@ header h2 {
 }
 
 .hamburger-icon {
+     display: none;
+}
+
+.close-icon {
      display: none;
 }
 
@@ -405,15 +410,16 @@ ul > .button:hover {
      }
 
      .hamburger-icon {
-          display: none;
+          display: block;
           margin-right: 40px;
      }
      .close-icon {
-          width: 30px;
+          width: 25px;
           margin-right: 40px;
+          display: none;
      }
      .nav-mobile {
-          display: block;
+          display: none;
           position: absolute;
           top: 150%;
           left: 50%;
@@ -435,9 +441,7 @@ ul > .button:hover {
      }
 
      .home-title h1 {
-          /* font-size: 30px; */
           text-align: center;
-          /* margin-top: 44px; */
      }
 
      .home-title > svg {
@@ -454,19 +458,13 @@ ul > .button:hover {
           align-items: center;
      }
 
-     /* .transform > img {
-          width: 300px;
-          margin: 0 auto;
-     } */
-
      .transform-text > h3 {
-          /* font-size: 25px; */
           text-align: center;
      }
 
      .transform-text > p {
           font-size: 15px;
-          /* width: 275px; */
+
           margin: 0 auto;
      }
 
@@ -479,14 +477,9 @@ ul > .button:hover {
           align-items: center;
      }
 
-     /* .standout-text > h3 {
-          font-size: 20px;
-          text-align: center;
-     } */
-
      .standout-text > p {
           font-size: 15px;
-          /* width: 300px; */
+
           margin: 0 auto;
      }
 
@@ -494,19 +487,10 @@ ul > .button:hover {
           margin: 0 auto;
      }
 
-     /* .standout > img {
-          width: 300px;
-          margin: 0 auto;
-     } */
-
      .photos {
           display: grid;
           align-items: center;
      }
-
-     /* .graphic-design > img {
-          width: 300px;
-     } */
 
      .graphic-design-text {
           position: absolute;
@@ -518,15 +502,10 @@ ul > .button:hover {
      }
 
      .graphic-design-text > p {
-          /* width: 250px; */
           font-size: 12px;
           position: relative;
           left: -36px;
      }
-
-     /* .photography > img {
-          width: 300px;
-     } */
 
      .photography-text {
           position: absolute;
@@ -538,7 +517,6 @@ ul > .button:hover {
      }
 
      .photography-text > p {
-          /* width: 250px; */
           font-size: 12px;
           position: relative;
           left: -36px;

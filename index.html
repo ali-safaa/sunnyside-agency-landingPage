@@ -30,17 +30,20 @@
           <title>Frontend Mentor | Sunnyside agency landing page</title>
      </head>
      <body>
-          <header>
-               <h2>sunnyside</h2>
+          <header data-header>
+               <h2 data-logo>sunnyside</h2>
                <nav class="nav-desktop">
                     <ul>
                          <a href="#about">About</a>
                          <a href="#services">Services</a>
                          <a href="#projects">Projects</a>
-                         <a class="button" href="#contact">CONTACT</a>
+                         <a data-button class="button" href="#contact"
+                              >CONTACT</a
+                         >
                     </ul>
                </nav>
                <svg
+                    data-hamburger-icon
                     class="hamburger-icon"
                     width="24"
                     height="18"
@@ -52,8 +55,13 @@
                          fill-rule="evenodd"
                     />
                </svg>
-               <img class="close-icon" src="/images/close-icon.png" alt="" />
-               <nav class="nav-mobile">
+               <img
+                    data-close-icon
+                    class="close-icon"
+                    src="/images/close-icon.png"
+                    alt=""
+               />
+               <nav data-nav-mobile class="nav-mobile">
                     <ul>
                          <a href="#about">About</a>
                          <a href="#services">Services</a>
@@ -255,5 +263,6 @@
                     <a href="https://github.com/ali-safaa">Ali Safaa</a>
                </div>
           </section>
+          <script src="script.js"></script>
      </body>
 </html>

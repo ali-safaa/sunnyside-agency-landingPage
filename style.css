@@ -494,11 +494,11 @@ ul > .button:hover {
 
      .graphic-design-text {
           position: absolute;
-          left: 64px;
-          top: 143px;
+          left: 35%;
+          top: 60%;
      }
      .graphic-design-text > h3 {
-          font-size: 20px;
+          font-size: clamp(15px, 5vw, 30px);
      }
 
      .graphic-design-text > p {
@@ -509,11 +509,11 @@ ul > .button:hover {
 
      .photography-text {
           position: absolute;
-          left: 80px;
-          top: 143px;
+          left: 35%;
+          top: 60%;
      }
      .photography-text > h3 {
-          font-size: 20px;
+          font-size: clamp(15px, 5vw, 30px);
      }
 
      .photography-text > p {

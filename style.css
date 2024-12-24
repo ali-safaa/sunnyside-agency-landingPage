@@ -124,12 +124,12 @@ ul > .button:hover {
 .transform-text {
      display: grid;
      align-items: center;
-     padding: 70px 110px;
+     padding: clamp(30px, 5vw, 70px) clamp(50px, 20vw, 30px);
 }
 
 .transform-text > h3 {
      font-family: "Fraunces", serif;
-     font-size: clamp(20px, 5vw, 70px);
+     font-size: clamp(20px, 11vw, 70px);
      padding-bottom: 30px;
      max-width: 580px;
 }
@@ -167,12 +167,12 @@ ul > .button:hover {
 .standout-text {
      display: grid;
      align-items: center;
-     padding: 70px 40px;
+     padding: clamp(30px, 5vw, 70px) clamp(50px, 20vw, 30px);
 }
 
 .standout-text > h3 {
      font-family: "Fraunces", serif;
-     font-size: clamp(20px, 5vw, 70px);
+     font-size: clamp(20px, 11vw, 70px);
      padding-bottom: 30px;
      max-width: 720px;
 }
@@ -412,6 +412,7 @@ ul > .button:hover {
      .hamburger-icon {
           display: block;
           margin-right: 40px;
+          /* color: black; */
      }
      .close-icon {
           width: 25px;
@@ -421,12 +422,11 @@ ul > .button:hover {
      .nav-mobile {
           display: none;
           position: absolute;
-          top: 150%;
+          top: 160px;
           left: 50%;
-          transform: translate(-50%, -50%);
+          transform: translate(-55%, -50%);
           background-color: white;
-          width: 100%;
-          max-width: 500px;
+          width: clamp(300px, 73vw, 500px);
           height: auto;
           padding: 22px 0;
           border-radius: 10px;

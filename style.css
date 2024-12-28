@@ -552,7 +552,7 @@ ul > .button:hover {
 
      .images img {
           width: 300px;
-          margin-right: 0;
+          margin-right: 10px;
      }
 
      .footer-container h1 {
